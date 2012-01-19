@@ -1,0 +1,20 @@
+= w32evol -- x86 obfuscation engine
+
+== Description
+The Win32/Evol virus, which appeared around July 2000, implemented a 
+metamorphic engine that was able to run on any major Win32 platform.  One of 
+the functionalities of Evol's metamorphic engine was to insert garbage 
+between core instructions.
+
+== Installation
+This engine was built in Windows XP using the MASM32 assembler (ml.exe).
+
+A rakefile is included for convenience.  The engine does not need to be 
+rebuilt.  The executable file, w32evol.exe is found in the bin directory.
+The source code is in the src directory.
+
+If you need to rebuild this engine, try to do so under Windows XP.  However, 
+you may have luck in Linux using Wine.
+
+== Usage
+
