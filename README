@@ -2,17 +2,17 @@
 
 Original Author:: Unknown
 Author:: {Martin Velez}[http://www.martinvelez.com]
-Copyright:: Copyright (c) 2011 Martin Velez
-License:: GPL[http://http://www.gnu.org/copyleft/gpl.html]
+Copyright:: Copyright (C) 2011 Martin Velez
+License:: GPL[http://http://www.gnu.org/copyleft/gpl.html], [link:LICENSE]
 
 == Description 
 
-This repository contains an executable version of the obfuscation engine used 
-by the W32.Evol virus.
+This repository contains obfuscation engine used by the W32.Evol virus wrapped
+in an executable with a command line interface.
 
 The Win32.Evol virus appeared around July 2000 and was able to infect any major
 Win32 platform..  It used a metamorphic engine to rewrite its code during
-replication.  Here is a more detailed description of the virus 
+replication.  Here is a more detailed description of the virus: 
 Symantec[http://www.symantec.com/security_response/writeup.jsp?docid=2000-122010-0045-99].
 
 == Installation
