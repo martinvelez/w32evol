@@ -1,9 +1,9 @@
 # w32evol -- x86 obfuscation engine
 
-* Original Author:: Unknown
-* Author:: [Martin Velez](http://www.martinvelez.com)
-* Copyright:: Copyright (C) 2011 Martin Velez
-* License:: [GPL](http://http://www.gnu.org/copyleft/gpl.html)
+* Original Author: 	Unknown
+* Author: 					[Martin Velez](http://www.martinvelez.com)
+* Copyright: 				Copyright (C) 2011 Martin Velez
+* License: 					[GPL](http://http://www.gnu.org/copyleft/gpl.html)
 
 ## Description 
 
