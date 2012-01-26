@@ -1,11 +1,10 @@
-- - -
 # w32evol -- x86 obfuscation engine
 - - -
 
 * Original Author: 	Unknown
 * Author: 					[Martin Velez](http://www.martinvelez.com)
 * Copyright: 				Copyright (C) 2011 Martin Velez
-* License: 					[GPL](http://http://www.gnu.org/copyleft/gpl.html)
+* License: 					[GPL](http://www.gnu.org/copyleft/gpl.html)
 
 ## Description 
 
@@ -15,11 +14,13 @@ in an executable with a command line interface.
 The Win32.Evol virus appeared around July 2000 and was able to infect any major
 Win32 platform..  It used a metamorphic engine to rewrite its code during
 replication.  Here is a more detailed description of the virus: 
-Symantec[http://www.symantec.com/security_response/writeup.jsp?docid=2000-122010-0045-99].
+[Symantec](http://www.symantec.com/security_response/writeup.jsp?docid=2000-122010-0045-99).
 
 ## Dependencies
 
-* MAMS32 assembler (ml.exe) 
+* [MAMS32](http://www.masm32.com/)
+  * ml.exe: assembler 
+
 
 ## Installation
 This engine was built in Windows XP using the MASM32 assembler (ml.exe).
