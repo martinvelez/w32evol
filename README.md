@@ -19,7 +19,7 @@ replication.  Here is a more detailed description of the virus:
 ## Dependencies
 
 * [MAMS32](http://www.masm32.com/)
-  * ml.exe: assembler 
+    * ml.exe: assembler 
 
 
 ## Installation
