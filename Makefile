@@ -5,8 +5,9 @@
 # Linker:
 #
 
-LD				= link
+LD				= link.exe
 LDFLAGS		= /SUBSYSTEM:CONSOLE
-AS				= ml
+AS				= ml.exe
 ASFLAGS 	= /nologo /c /coff
+
 

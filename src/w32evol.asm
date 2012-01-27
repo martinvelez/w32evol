@@ -1,12 +1,19 @@
-.386
-.model flat,stdcall
-option casemap:none
+    .486
+    .model flat,stdcall
+    option casemap:none
 
-include \masm32\include\windows.inc
-include \masm32\include\kernel32.inc
-include \masm32\include\user32.inc
-includelib \masm32\lib\kernel32.lib
-includelib \masm32\lib\user32.lib
+;--- use Masm32 include files
+
+    pushcontext listing	;suppress listing of includes
+    .nolist
+    .nocref
+    include c:\masm32\include\windows.inc
+		include c:\masm32\include\masm32.inc
+    include c:\masm32\include\kernel32.inc
+    include c:\masm32\include\user32.inc
+		includelib c:\masm32\lib\kernel32.lib
+    includelib c:\masm32\lib\user32.lib
+    popcontext listing
 
 .data
 success							dd 0
@@ -20,7 +27,7 @@ errorCreateFile 		dd 6
 errorWriteFile			dd 7
 errorEngineAbort 		dd 8
 
-bytesRead 			dd 	0
+bytesRead				dd 	0
 bytesToWrite 		dd 	0
 bytesWritten		dd 	0
 ibuf 						db 1024 dup (0)			; 10,000 bytes initialized to 0
@@ -31,7 +38,7 @@ obuf					db 1024 dup (?)			; 10,000 bytes initialized to 0
 
 infileName 		db 128 dup (?)
 infileHandle 	dd 1 dup (?)
-infileSize 						dd 1 dup (?)
+infileSize		dd 1 dup (?)
 
 outfileName 	db 128 dup (?)
 outfileHandle dd 1 dup (?)
