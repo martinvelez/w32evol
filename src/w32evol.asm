@@ -1,19 +1,15 @@
-    .486
-    .model flat,stdcall
-    option casemap:none
+.486
+.model flat,stdcall
+option casemap:none
 
-;--- use Masm32 include files
+include C:\masm32\include\windows.inc
+include C:\masm32\include\kernel32.inc
+include C:\masm32\include\user32.inc
+include C:\masm32\include\masm32.inc
 
-    pushcontext listing	;suppress listing of includes
-    .nolist
-    .nocref
-    include c:\masm32\include\windows.inc
-		include c:\masm32\include\masm32.inc
-    include c:\masm32\include\kernel32.inc
-    include c:\masm32\include\user32.inc
-		includelib c:\masm32\lib\kernel32.lib
-    includelib c:\masm32\lib\user32.lib
-    popcontext listing
+includelib C:\masm32\lib\kernel32.lib
+includelib C:\masm32\lib\user32.lib
+includelib C:\masm32\lib\masm32.lib
 
 .data
 success							dd 0
@@ -38,7 +34,7 @@ obuf					db 1024 dup (?)			; 10,000 bytes initialized to 0
 
 infileName 		db 128 dup (?)
 infileHandle 	dd 1 dup (?)
-infileSize		dd 1 dup (?)
+infileSize 		dd 1 dup (?)
 
 outfileName 	db 128 dup (?)
 outfileHandle dd 1 dup (?)
@@ -52,18 +48,18 @@ start:
 	CALL SetUnhandledExceptionFilter
 	
 	invoke GetCL, 1, addr infileName			; infileName := ARGV[1]
-  cmp eax, 1																					; 1 = success, 2 = no argument exists at specified arg number, 3 = non-matching quotatin marks, 4 = empty quotation marks
-  jne printusage																			; if !success, print usage
-	invoke GetCL, 2, addr outfileName		; outfileName := ARGV[2]
-  cmp eax, 1																					; 1 = success, 2 = no argument exists at specified arg number, 3 = non-matching quotatin marks, 4 = empty quotation marks
-  jne printusage																			; if !success, print usage
+  cmp eax, 1														; 1 = success, 2 = no argument exists at specified arg number, 3 = non-matching quotatin marks, 4 = empty quotation marks
+  jne printusage												; if !success, print usage
+	invoke GetCL, 2, addr outfileName			; outfileName := ARGV[2]
+  cmp eax, 1														; 1 = success, 2 = no argument exists at specified arg number, 3 = non-matching quotatin marks, 4 = empty quotation marks
+  jne printusage												; if !success, print usage
 
 readInfile:	
 	; open infile and read contents into allocated memory ibuf
 	invoke CreateFile, addr infileName, GENERIC_READ, 	0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0
 	cmp eax, INVALID_HANDLE_VALUE
 	je	openfileError
-	mov infileHandle, eax										; save file handle
+	mov infileHandle, eax									; save file handle
 	
 	invoke GetFileSize, eax, 0
 	mov infileSize, eax												; save size of file
