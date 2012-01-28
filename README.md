@@ -8,6 +8,8 @@
 
 ## Description 
 
+**This repository does not contain a virus.**
+
 This repository contains a command line interface to the obfuscation engine 
 used by the W32.Evol virus.
 
