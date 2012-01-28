@@ -18,25 +18,29 @@ replication.  Here is a more detailed description of the virus:
 
 ## Dependencies
 
-General
+### General
+
 * [MAMS32](http://www.masm32.com/)
     * ml.exe: assembler 
     * link.exe: linker
 
-Linux (Ubuntu 11.10)
+### Linux (Tested on Ubuntu 11.10)
+
 * wine1.3 or greater (may work with wine1.2)
 
 ## Installation
 
-Linux (Ubuntu 11.10)
-    make
+### Linux (Tested on Ubuntu 11.10)
 
-Windows
- ml.exe
+	$ make
 
+### Windows
+ 
+	> make.bat
 
 ## Usage
- w32evol.exe <infile.bin> <outfile.bin>
+
+	w32evol.exe <infile.bin> <outfile.bin>
 
 infile.bin: existing file, contains raw binary code which represents x86 
 instructions
