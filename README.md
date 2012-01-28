@@ -50,7 +50,7 @@ Files to build w32evol.exe in Windows and Linux are included.
 
 ## Usage
 
-	w32evol.exe _in.bin_ _out.bin_
+	w32evol.exe <in.bin> <out.bin>
 
 **in.bin**: input file; exists; contains raw binary code which represents x86 
 instructions
