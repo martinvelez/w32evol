@@ -1,5 +1,6 @@
 #w32evol -- x86 obfuscation engine
 - - -
+
 ## Table of Contents
 1. Introduction
 2. Dependencies
@@ -7,6 +8,7 @@
 4. Usage
 5. Development
 6. APPENDIX A: MASM32 and wine
+
 - - -
 
 ## 1. Introduction 
