@@ -8,29 +8,32 @@
 
 ## Description 
 
-This repository contains obfuscation engine used by the W32.Evol virus wrapped
-in an executable with a command line interface.
+This repository contains a command line interface to the obfuscation engine 
+used by the W32.Evol virus.
 
 The Win32.Evol virus appeared around July 2000 and was able to infect any major
-Win32 platform..  It used a metamorphic engine to rewrite its code during
+Win32 platform.  It used a metamorphic engine to rewrite its code during
 replication.  Here is a more detailed description of the virus: 
 [Symantec](http://www.symantec.com/security_response/writeup.jsp?docid=2000-122010-0045-99).
 
 ## Dependencies
 
+General
 * [MAMS32](http://www.masm32.com/)
     * ml.exe: assembler 
+    * link.exe: linker
 
+Linux (Ubuntu 11.10)
+* wine1.3 or greater (may work with wine1.2)
 
 ## Installation
-This engine was built in Windows XP using the MASM32 assembler (ml.exe).
 
-A rakefile is included for convenience.  The engine does not need to be 
-rebuilt.  The executable file, w32evol.exe is found in the bin directory.
-The source code is in the src directory.
+Linux (Ubuntu 11.10)
+    make
 
-If you need to rebuild this engine, try to do so under Windows XP.  However, 
-you may have luck in Linux using Wine.
+Windows
+ ml.exe
+
 
 ## Usage
  w32evol.exe <infile.bin> <outfile.bin>
