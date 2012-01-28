@@ -6,7 +6,18 @@
 * Copyright: 				Copyright (C) 2011 [Martin Velez](http://www.martinvelez.com)
 * License: 					[GPL](http://www.gnu.org/copyleft/gpl.html)
 
-## Description 
+## Table of Contents
+
+1. Introduction
+2. Dependencies
+3. Installation
+4. Usage
+5. Development
+
+* APPENDIX A: MASM32 and wine
+
+
+## 1. Introduction 
 
 **This repository does not contain a virus.**
 
@@ -23,7 +34,7 @@ not necessarily obfuscate.
 We wrote evol.asm which drives the W32.Evol obfuscation engine and provides a 
 command line interface.
 
-## Dependencies
+## 2. Dependencies
 
 ### General
 
@@ -37,7 +48,7 @@ command line interface.
 
 See **APPENDIX A** for more information about installing MASM32 in Linux.
 
-## Installation
+## 3. Installation
 
 The goal is to build w32evol.exe.  You can then place/install this executable 
 wherever you please.  
@@ -52,7 +63,7 @@ Files to build w32evol.exe in Windows and Linux are included.
  
 	> make.bat
 
-## Usage
+## 4. Usage
 
 	w32evol.exe <in.bin> <out.bin>
 
@@ -77,7 +88,7 @@ that some obfuscation engines have bugs.
 	00000004  0000              add [bx+si],al
 
 
-## Development
+## 5. Development
 
 ### Source 
 
@@ -91,7 +102,7 @@ at:
 Provide feedback, get help, request features, and report bugs here:
 
 	https://bitbucket.org/martinvelez/w32evol/issues
-## Acknowledgements
+### Acknowledgements
 * [Orr](http://www.antilife.org/files/Evol.pdf)
     * wrote an [article](www.openrce.org/articles/full\_view/27) in which described 
       how he disassembled the metamorphic engine used in the W32.Evol virus
