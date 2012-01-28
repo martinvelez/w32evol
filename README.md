@@ -2,7 +2,6 @@
 - - -
 
 ## Table of Contents
-
 1. Introduction
 2. Dependencies
 3. Installation
@@ -12,7 +11,6 @@
 
 
 ## 1. Introduction 
-
 **This repository does not contain a virus.**
 
 This repository contains a command line interface to the obfuscation engine 
@@ -45,11 +43,8 @@ See **APPENDIX A** for more information about installing and running MASM32 in
 Linux.
 
 ## 3. Installation
-
 The goal is to build w32evol.exe.  You can then place/install this executable 
-wherever you please.  
-
-Files to build w32evol.exe in Windows and Linux are included.
+wherever you please.  Files to build w32evol.exe in Windows and Linux are included.
 
 ### Linux (Tested on Ubuntu 11.10)
 
@@ -70,7 +65,6 @@ instructions
 which represents x86 instructions
 
 ## Usage: Example 1
-
 In this example, we use w32evol.exe to obfuscate (or transform) an instruction 
 to an equivalent instruction in the Intel x86 instruction set. Unfortunately, 
 the obfuscation engines add three extra bytes (00 00 00).  This demonstrates 
@@ -85,24 +79,22 @@ that some obfuscation engines have bugs.
 
 
 ## 5. Development
-
-Original Author: 	Unknown
-Author: 					[Martin Velez](http://www.martinvelez.com)
-Copyright: 				Copyright (C) 2011 [Martin Velez](http://www.martinvelez.com)
-License: 					[GPL](http://www.gnu.org/copyleft/gpl.html)
+* Original Author: 	Unknown
+* Author: 					[Martin Velez](http://www.martinvelez.com)
+* Copyright: 				Copyright (C) 2011 [Martin Velez](http://www.martinvelez.com)
+* License: 					[GPL](http://www.gnu.org/copyleft/gpl.html)
 
 ### Source 
-
 w32evol is hosted on [Bitbucket](https://bitbucket.org/martinvelez/w32evol/src)
 at:
 	
 	https://bitbucket.org/martinvelez/w32evol/src
 
 ### Issues
-
 Provide feedback, get help, request features, and report bugs here:
 
 	https://bitbucket.org/martinvelez/w32evol/issues
+
 ### Acknowledgements
 * [Orr](http://www.antilife.org/files/Evol.pdf)
     * wrote an [article](www.openrce.org/articles/full\_view/27) in which described 
@@ -116,7 +108,6 @@ Provide feedback, get help, request features, and report bugs here:
       source code and corrected them.
 
 ## 6. APPENDIX A: MASM32 and wine
-
 It is possible to use MASM32 in Linux using wine.  When you download MAMS32, 
 you get an installer file, install.exe.  Use wine to run that installer.  
 
