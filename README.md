@@ -35,6 +35,8 @@ command line interface.
 
 * [wine](http://www.winehq.org/download/) (1.3 or greater, may work with 1.2)
 
+See **APPENDIX A** for more information about installing MASM32 in Linux.
+
 ## Installation
 
 The goal is to build w32evol.exe.  You can then place/install this executable 
@@ -92,5 +94,32 @@ that some obfuscation engines have bugs.
       disassembled it using IDA Pro.  We found the mistakes in the disassembled 
       source code and corrected them.
 
+## APPENDIX A: MASM32 and wine
 
+It is possible to use MASM32 in Linux using wine.  When you download MAMS32, 
+you get an installer file, install.exe.  Use wine to run that installer.  
+
+	$ cd ~/Downloads
+	$ ls
+	install.exe
+	$ wineconsole install.exe
+
+I have installed MASM32 using wine in two different Ubuntu machines and the 
+MASM32 libraries have not been built successfully.  I had to build the 
+libraries myself.
+
+	user@host:~/.wine/drive_c/masm32$ ls
+	gtstbd.qsc  	dlgtmplt.qsc  licence       mnutoasm.exe   qetxt.bin     topgun.exe
+	bin           examples      m32lib        multitool.exe  qsc.dll       tproc.exe
+	bin2dbex.exe  fda32.exe     macros        plugins        script        tproc.txt
+	blankdlg.qsc  fda.exe       makecimp.exe  procmap.exe    se.dll        tutorial
+	bldmakit.qsc  fpulib        makecon.qsc   procs          shellex.exe   tview.exe
+	blockp.ini    getcolor.exe  makelibs.bat  prostart.exe   subclass.exe  ueint.bin
+	cg.exe        help          makerc.qsc    prostart.ini   testbed.qsc   uetxt.bin
+	cg.ini        include       maketbl.exe   prostart.set   testinst      uniedit.exe
+	cpicker.exe   intro.txt     mangle.exe    pths.ini       text          vkdebug
+	datetime      jtmake.exe    masm32ci.exe  qeditor.exe    tmp.qsc       wcsch.exe
+	dlgmake.exe   lib           menuedit.dll  qeint.bin      tools
+	dlgproc.qsc   libbat.qsc    menus.ini     qetb.exe       topgun.chm
+	user@host:~/.wine/drive_c/masm32$ makelibs.bat
 
