@@ -11,12 +11,12 @@
 This repository contains a command line interface to the obfuscation engine 
 used by the W32.Evol virus.
 
-The {Win32.Evol}(http://www.symantec.com/security_response/writeup.jsp?docid=2000-122010-0045-99) 
-virus appeared around July 2000 and was able to infect any major
-Win32 platform.  It used a metamorphic engine to rewrite its code during
-replication.  The purpose of its metamorphic engine was to create mutated
-copies of itself.  Hence, some of the transformations or rewritings it applies
-to instructions do not necessarily obfuscate.  
+The {Win32.Evol}(http://www.symantec.com/security\_response/writeup.jsp?docid=2000-122010-0045-99)
+virus appeared around July 2000 and was able to infect any major Win32
+platform.  It used a metamorphic engine to rewrite its code during replication.
+The purpose of its metamorphic engine was to create mutated copies of itself.
+Hence, some of the transformations or rewritings it applies to instructions do
+not necessarily obfuscate.  
 
 We wrote evol.asm which drives the W32.Evol obfuscation engine and provides a 
 command line interface.
