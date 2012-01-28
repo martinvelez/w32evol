@@ -1,11 +1,6 @@
 #w32evol -- x86 obfuscation engine
 - - -
 
-* Original Author: 	Unknown
-* Author: 					[Martin Velez](http://www.martinvelez.com)
-* Copyright: 				Copyright (C) 2011 [Martin Velez](http://www.martinvelez.com)
-* License: 					[GPL](http://www.gnu.org/copyleft/gpl.html)
-
 ## Table of Contents
 
 1. Introduction
@@ -90,6 +85,11 @@ that some obfuscation engines have bugs.
 
 
 ## 5. Development
+
+* Original Author: 	Unknown
+* Author: 					[Martin Velez](http://www.martinvelez.com)
+* Copyright: 				Copyright (C) 2011 [Martin Velez](http://www.martinvelez.com)
+* License: 					[GPL](http://www.gnu.org/copyleft/gpl.html)
 
 ### Source 
 
