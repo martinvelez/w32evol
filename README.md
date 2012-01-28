@@ -26,7 +26,7 @@ replication.  Here is a more detailed description of the virus:
 
 ### Linux (Tested on Ubuntu 11.10)
 
-* wine1.3 or greater (may work with wine1.2)
+* [wine](http://www.winehq.org/download/) (>= 1.3 or greater, may work with 1.2)
 
 ## Installation
 
