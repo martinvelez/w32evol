@@ -1,4 +1,4 @@
-# w32evol -- x86 obfuscation engine
+#w32evol -- x86 obfuscation engine
 - - -
 
 * Original Author: 	Unknown
@@ -80,8 +80,17 @@ that some obfuscation engines have bugs.
 ## Development
 
 ### Source 
-[Bitbucket](https://bitbucket.org/martinvelez/w32evol/src)
 
+w32evol is hosted on [Bitbucket](https://bitbucket.org/martinvelez/w32evol/src)
+at:
+	
+	https://bitbucket.org/martinvelez/w32evol/src
+
+### Issues
+
+Provide feedback, get help, request features, and report bugs here:
+
+	https://bitbucket.org/martinvelez/w32evol/issues
 ## Acknowledgements
 * [Orr](http://www.antilife.org/files/Evol.pdf)
     * wrote an [article](www.openrce.org/articles/full\_view/27) in which described 
@@ -105,8 +114,8 @@ you get an installer file, install.exe.  Use wine to run that installer.
 	$ wineconsole install.exe
 
 I have installed MASM32 using wine in two different Ubuntu machines and the 
-MASM32 libraries have not been built successfully.  I had to build the 
-libraries myself.
+MASM32 libraries have not been built successfully in either machine.  I had 
+to build the libraries myself.
 
 	user@host:~/.wine/drive_c/masm32$ ls
 	gtstbd.qsc  	dlgtmplt.qsc  licence       mnutoasm.exe   qetxt.bin     topgun.exe
@@ -121,5 +130,13 @@ libraries myself.
 	datetime      jtmake.exe    masm32ci.exe  qeditor.exe    tmp.qsc       wcsch.exe
 	dlgmake.exe   lib           menuedit.dll  qeint.bin      tools
 	dlgproc.qsc   libbat.qsc    menus.ini     qetb.exe       topgun.chm
-	user@host:~/.wine/drive_c/masm32$ makelibs.bat
+	user@host:~/.wine/drive_c/masm32$ wine cmd
+	CMD Version 1.3.28
+
+	Z:\home\user\Downloads>makelibs.bat
+
+In one machine, this proceeded without a problem.  In another machine, I had 
+to increase 'ulimit -n' from 1024 to 4096 because, apparently, wine was 
+opening too many files.
+
 
