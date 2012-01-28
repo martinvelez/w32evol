@@ -30,6 +30,9 @@ replication.  Here is a more detailed description of the virus:
 
 ## Installation
 
+Files to build w32evol.exe are included.  
+You can build under Linux and Windows.
+
 ### Linux (Tested on Ubuntu 11.10)
 
 	$ make
