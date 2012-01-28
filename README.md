@@ -82,7 +82,7 @@ that some obfuscation engines have bugs.
 
 ## Acknowledgements
 * [Orr](http://www.antilife.org/files/Evol.pdf)
-    * wrote an {article}(www.openrce.org/articles/full\_view/27) in which described 
+    * wrote an [article](www.openrce.org/articles/full\_view/27) in which described 
       how he disassembled the metamorphic engine used in the W32.Evol virus
     * He  was kind enough to email his disassembled code.  
 * [VX Heavens](http://vx.netlux.org/vl.php?dir=Virus.Win32.Evol)
