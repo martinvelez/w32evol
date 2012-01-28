@@ -13,7 +13,10 @@ used by the W32.Evol virus.
 
 The Win32.Evol virus appeared around July 2000 and was able to infect any major
 Win32 platform.  It used a metamorphic engine to rewrite its code during
-replication.  Here is a more detailed description of the virus: 
+replication.  The purpose of its metamorphic engine was to create mutated
+copies of itself.  Hence, some of the transformations or rewritings it applies
+to instructions do not necessarily obfuscate.  Here is a more detailed
+description of the virus:
 [Symantec](http://www.symantec.com/security_response/writeup.jsp?docid=2000-122010-0045-99).
 
 We wrote evol.asm which drives the W32.Evol obfuscation engine and provides a 
