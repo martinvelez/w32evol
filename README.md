@@ -13,8 +13,7 @@
 3. Installation
 4. Usage
 5. Development
-
-* APPENDIX A: MASM32 and wine
+6. APPENDIX A: MASM32 and wine
 
 
 ## 1. Introduction 
@@ -22,7 +21,8 @@
 **This repository does not contain a virus.**
 
 This repository contains a command line interface to the obfuscation engine 
-used by the W32.Evol virus.
+used by the 
+[Win32.Evol](http://www.symantec.com/security\_response/writeup.jsp?docid=2000-122010-0045-99).
 
 The [Win32.Evol](http://www.symantec.com/security\_response/writeup.jsp?docid=2000-122010-0045-99)
 virus appeared around July 2000 and was able to infect any major Win32
@@ -46,7 +46,8 @@ command line interface.
 
 * [wine](http://www.winehq.org/download/) (1.3 or greater, may work with 1.2)
 
-See **APPENDIX A** for more information about installing MASM32 in Linux.
+See **APPENDIX A** for more information about installing and running MASM32 in 
+Linux.
 
 ## 3. Installation
 
@@ -114,7 +115,7 @@ Provide feedback, get help, request features, and report bugs here:
       disassembled it using IDA Pro.  We found the mistakes in the disassembled 
       source code and corrected them.
 
-## APPENDIX A: MASM32 and wine
+## 6. APPENDIX A: MASM32 and wine
 
 It is possible to use MASM32 in Linux using wine.  When you download MAMS32, 
 you get an installer file, install.exe.  Use wine to run that installer.  
