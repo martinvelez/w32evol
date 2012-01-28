@@ -56,14 +56,13 @@ wherever you please.  Files to build w32evol.exe in Windows and Linux are includ
 	> make.bat
 
 ## 4. Usage
-
-	w32evol.exe <in.bin> <out.bin>
-
 **in.bin**: input file; exists; contains raw binary code which represents x86 
 instructions
 
 **out.bin**: output file; create if does not exist; obfuscated raw binary code 
 which represents x86 instructions
+
+	w32evol.exe <in.bin> <out.bin>
 
 ## Usage: Example 1
 In this example, we use w32evol.exe to obfuscate (or transform) an instruction 
