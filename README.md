@@ -30,8 +30,10 @@ replication.  Here is a more detailed description of the virus:
 
 ## Installation
 
-Files to build w32evol.exe are included.  
-You can build under Linux and Windows.
+The goal is to build w32evol.exe.  You can then place/install this executable 
+wherever you please.  
+
+Files to build w32evol.exe in Windows and Linux are included.
 
 ### Linux (Tested on Ubuntu 11.10)
 
@@ -43,13 +45,13 @@ You can build under Linux and Windows.
 
 ## Usage
 
-	w32evol.exe <infile.bin> <outfile.bin>
+	w32evol.exe *infile.bin* *outfile.bin*
 
-infile.bin: existing file, contains raw binary code which represents x86 
+**infile.bin**: input file; exists; contains raw binary code which represents x86 
 instructions
 
-outfile.bin: nonexisting file, will contain obfuscated code if no error occurs 
-during obfuscation
+**outfile.bin**: output file; create if does not exist; obfuscated raw binary code 
+which represents x86 instructions
 
 ## Development
 ### Source 
