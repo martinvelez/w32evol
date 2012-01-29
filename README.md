@@ -44,7 +44,7 @@ See **APPENDIX A** for more information about installing and running MASM32 in
 Linux.
 
 ## 3. Installation
-The goal is to build w32evol.exe.  Makefiles for Windows and Linux are included
+The goal is to build w32evol.exe.  Makefiles for Windows and Linux are included.
 
 ### Linux (Tested on Ubuntu 11.10)
 To build:
@@ -72,8 +72,8 @@ which represents x86 instructions
 ## Usage: Example 1
 In this example, we use w32evol.exe to obfuscate (or transform) an instruction 
 to an equivalent instruction in the Intel x86 instruction set. Unfortunately, 
-the obfuscation engines add three extra bytes (00 00 00).  This demonstrates 
-that some obfuscation engines have bugs.
+the obfuscation engines added three extra bytes (00 00 00), and changed the 
+semantics.  This demonstrates that some obfuscation engines have bugs.
 
 	$ ndisasm in.bin
 	00000000  83C00A            add ax,byte +0xa
