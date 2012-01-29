@@ -44,15 +44,20 @@ See **APPENDIX A** for more information about installing and running MASM32 in
 Linux.
 
 ## 3. Installation
-The goal is to build w32evol.exe.  You can then place/install this executable 
-wherever you please.  Files to build w32evol.exe in Windows and Linux are included.
+The goal is to build w32evol.exe.  Makefiles for Windows and Linux are included
 
 ### Linux (Tested on Ubuntu 11.10)
+To build:
 
 	$ make
 
+To install into the current directory's bin folder:
+
+	$ make install
+
 ### Windows
- 
+After w32evol.exe is built, you can place/install it wherever you please.
+
 	> make.bat
 
 ## 4. Usage
