@@ -90,8 +90,7 @@ semantics.  This demonstrates that some obfuscation engines have bugs.
 * License: 					[GPL](http://www.gnu.org/copyleft/gpl.html)
 
 ### Source 
-w32evol is hosted on [Bitbucket](https://bitbucket.org/martinvelez/w32evol/src)
-at:
+[Bitbucket](https://bitbucket.org/martinvelez/w32evol/src) is hosting this code.
 	
 	https://bitbucket.org/martinvelez/w32evol/src
 
