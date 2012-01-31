@@ -60,6 +60,10 @@ place/install it wherever you please.
 
 	> make.bat
 
+*Note 1* This build process assumes that your Windows drive volume is labeled 
+"C:".  If your drive volume is labeled something else, for example, "Z:", then 
+you have to update the include paths in the src/w32evol.asm file.
+
 ## 4. Usage
 **in.bin**: input file; exists; contains x86 instructions encoded in raw binary
 code
