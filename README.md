@@ -48,7 +48,6 @@ included.  The following instructions do not place w32evol.exe in your PATH.
 
 ### Linux (Tested on Ubuntu 11.10)
 
-	$ make
 	$ make install
 
 If you want to install this program, then you can then place this whole
