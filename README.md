@@ -1,4 +1,4 @@
-#w32evol -- x86 obfuscation engine
+#w32evol -- an x86 obfuscation engine
 - - -
 
 ## Table of Contents
@@ -12,24 +12,20 @@
 - - -
 
 ## 1. Introduction 
-**This repository does not contain a virus.**
+**Does not contain a virus**
 
-This repository contains a command line interface to the obfuscation engine 
-used by the 
+w32evol is a command line interface to the obfuscation/metamorphic engine used
+by the
 [Win32.Evol](http://www.symantec.com/security\_response/writeup.jsp?docid=2000-122010-0045-99)
-virus.
+virus. It rewrites files containing x86 instructions encoded in binary.  
 
-This obfuscation engine rewrites a Windows Portable Executable file by applying.
-
-The [Win32.Evol](http://www.symantec.com/security\_response/writeup.jsp?docid=2000-122010-0045-99)
-virus appeared around July 2000 and was able to infect any major Win32 platform.  
-It used a metamorphic engine to rewrite its code during replication. The purpose 
-of its metamorphic engine was to create mutated copies of itself.Hence, some of 
-the transformations or rewritings it applies to instructions do not necessarily 
-obfuscate.  
-
-We wrote evol.asm which drives the W32.Evol obfuscation engine and provides a 
-command line interface.
+The
+[Win32.Evol](http://www.symantec.com/security\_response/writeup.jsp?docid=2000-122010-0045-99)
+virus appeared around July 2000 and was able to infect any major Win32
+platform.  It used this metamorphic engine to rewrite its code during
+replication. The purpose of its metamorphic engine was to create mutated copies
+of itself.Hence, some of the transformations or rewritings it applies to
+instructions do not necessarily obfuscate.  
 
 ## 2. Dependencies
 
@@ -47,30 +43,38 @@ See **APPENDIX A** for more information about installing and running MASM32 in
 Linux.
 
 ## 3. Installation
-The goal is to build w32evol.exe.  Makefiles for Windows and Linux are included.
+The goal is to build w32evol.exe.  Makefiles for Windows and Linux are 
+included.  The following instructions do not place w32evol.exe in your PATH.
 
 ### Linux (Tested on Ubuntu 11.10)
-To build:
 
 	$ make
-
-To install into the current directory's bin folder:
-
 	$ make install
 
+If you want to install this program, then you can then place this whole
+directory tree somewhere where you install non-packaged programs.  The /opt/ 
+folder is one example.
+
 ### Windows
-After w32evol.exe is built, you can place/install it wherever you please.
+This batch file builds w32evol.exe. After w32evol.exe is built, you can 
+place/install it wherever you please.
 
 	> make.bat
 
 ## 4. Usage
-**in.bin**: input file; exists; contains raw binary code which represents x86 
-instructions
+**in.bin**: input file; exists; contains x86 instructions encoded in raw binary
+code
 
-**out.bin**: output file; create if does not exist; obfuscated raw binary code 
-which represents x86 instructions
+**out.bin**: output file; create if does not exist; obfuscated x86 instructions
+encoded in raw binary code 
 
-	w32evol.exe <in.bin> <out.bin>
+## Linux
+
+	$ wine path/to/w32evol.exe <in.bin> <out.bin>
+
+## Windows
+
+	>path/to/w32evol.exe <in.bin> <out.bin>
 
 ## Usage: Example 1
 In this example, we use w32evol.exe to obfuscate (or transform) an instruction 
@@ -106,7 +110,7 @@ Provide feedback, get help, request features, and report bugs here:
 * [Orr](http://www.antilife.org/files/Evol.pdf)
     * wrote an [article](www.openrce.org/articles/full\_view/27) in which described 
       how he disassembled the metamorphic engine used in the W32.Evol virus
-    * He  was kind enough to email his disassembled code.  
+    * He was kind enough to email his disassembled code.  
 * [VX Heavens](http://vx.netlux.org/vl.php?dir=Virus.Win32.Evol)
     * Disassembled source code obtained from orriscariot@gmail.com.  Some of his 
       functions contained errors which cause the program to fail.  We obtained 
