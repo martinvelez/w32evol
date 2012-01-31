@@ -1,10 +1,3 @@
-		       ____ ___                 _ 
-		      |___ \__ \               | |
-	__      ____) | ) |_____   _____ | |
-	\ \ /\ / /__ < / // _ \ \ / / _ \| |
-	 \ V  V /___) / /|  __/\ V / (_) | |
-		\_/\_/|____/____\___| \_/ \___/|_|
-
 #w32evol -- x86 obfuscation engine
 - - -
 
@@ -23,14 +16,17 @@
 
 This repository contains a command line interface to the obfuscation engine 
 used by the 
-[Win32.Evol](http://www.symantec.com/security\_response/writeup.jsp?docid=2000-122010-0045-99).
+[Win32.Evol](http://www.symantec.com/security\_response/writeup.jsp?docid=2000-122010-0045-99)
+virus.
+
+This obfuscation engine rewrites a Windows Portable Executable file by applying.
 
 The [Win32.Evol](http://www.symantec.com/security\_response/writeup.jsp?docid=2000-122010-0045-99)
-virus appeared around July 2000 and was able to infect any major Win32
-platform.  It used a metamorphic engine to rewrite its code during replication.
-The purpose of its metamorphic engine was to create mutated copies of itself.
-Hence, some of the transformations or rewritings it applies to instructions do
-not necessarily obfuscate.  
+virus appeared around July 2000 and was able to infect any major Win32 platform.  
+It used a metamorphic engine to rewrite its code during replication. The purpose 
+of its metamorphic engine was to create mutated copies of itself.Hence, some of 
+the transformations or rewritings it applies to instructions do not necessarily 
+obfuscate.  
 
 We wrote evol.asm which drives the W32.Evol obfuscation engine and provides a 
 command line interface.
