@@ -62,7 +62,7 @@ readInfile:
 	mov infileHandle, eax									; save file handle
 	
 	invoke GetFileSize, eax, 0
-	mov infileSize, eax												; save size of file
+	mov infileSize, eax										; save size of file
 	
 	lea ecx, bytesRead
 	invoke ReadFile, infileHandle, addr ibuf, infileSize, ecx, 0
@@ -70,7 +70,7 @@ readInfile:
 	jz readfileError
 	
 	invoke CloseHandle, infileHandle
-	cmp eax, 0																;If the function succeeds, the return value is nonzero.
+	cmp eax, 0														;If the function succeeds, the return value is nonzero.
 	je closefileError
 	
 callengine:
@@ -87,7 +87,7 @@ writetofile:
 	invoke CreateFile, addr outfileName, GENERIC_WRITE, 	0, 0, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, 0
 	cmp eax, INVALID_HANDLE_VALUE
 	je	createfileError
-	mov outfileHandle, eax										; save file handle
+	mov outfileHandle, eax								; save file handle
 
 	lea ecx, bytesWritten
 	invoke WriteFile, outfileHandle, addr obuf, bytesToWrite, ecx, 0
@@ -98,7 +98,7 @@ writetofile:
 	cmp eax, 0	;If the function succeeds, the return value is nonzero.
 	je closefileError
 	
-	mov eax, success							; program exit code := success	
+	mov eax, success											; program exit code := success	
 	jmp close
 		
 printusage:
@@ -130,7 +130,7 @@ engineFailed:
 	jmp close
 	
 close:
-	invoke ExitProcess, eax			; return engine exit code
+	invoke ExitProcess, eax							; return engine exit code
 
 TopLevelExceptionFilter:
 	mov eax, 1	; 1 == do not display error closure box
