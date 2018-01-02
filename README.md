@@ -1,4 +1,4 @@
-#w32evol -- an x86 obfuscation engine
+# w32evol -- an x86 obfuscation engine
 - - -
 
 ## Table of Contents
@@ -12,7 +12,7 @@
 - - -
 
 ## 1. Introduction 
-**Does not contain a virus**
+**This does not contain a virus.**
 
 w32evol is a command line interface to the obfuscation/metamorphic engine used
 by the
@@ -94,32 +94,26 @@ semantics.  This demonstrates that some obfuscation engines have bugs.
 
 
 ## 5. Development
-* Original Author: 	Unknown
-* Author: 					[Martin Velez](http://www.martinvelez.com)
-* Copyright: 				Copyright (C) 2012 [Martin Velez](http://www.martinvelez.com)
-* License: 					[GPL](http://www.gnu.org/copyleft/gpl.html)
+* Original Author: Unknown.
+* Author: [Martin Velez](https://martinvelez.github.io), Earl Barr, and Zhendong Su.
+* License: MIT
 
-### Source 
-[Bitbucket](https://bitbucket.org/martinvelez/w32evol/src) is hosting this code.
-	
-	https://bitbucket.org/martinvelez/w32evol/src
+You can obtain the source from Github.
 
-### Issues
-Provide feedback, get help, request features, and report bugs here:
+```bash
+git clone https://github.com/martinvelez/w32evol
+```
 
-	https://bitbucket.org/martinvelez/w32evol/issues
+You report bugs and request features using the Github issue tracker.
+
+```bash
+https://github.com/martinvelez/w32evol/issues
+```
 
 ### Acknowledgements
-* [Orr](http://www.antilife.org/files/Evol.pdf)
-    * wrote an [article](www.openrce.org/articles/full\_view/27) in which described 
-      how he disassembled the metamorphic engine used in the W32.Evol virus
-    * He was kind enough to email his disassembled code.  
+* [Orr](http://www.antilife.org/files/Evol.pdf) wrote an [article](www.openrce.org/articles/full\_view/27) in which described how he disassembled the metamorphic engine used in the W32.Evol virus.  He was kind enough to email his disassembled code.  
 * [VX Heavens](http://vx.netlux.org/vl.php?dir=Virus.Win32.Evol)
-    * Disassembled source code obtained from orriscariot@gmail.com.  Some of his 
-      functions contained errors which cause the program to fail.  We obtained 
-      executabled code from http://vx.netlux.org/vl.php?dir=Virus.Win32.Evol, and 
-      disassembled it using IDA Pro.  We found the mistakes in the disassembled 
-      source code and corrected them.
+* orriscariot@gmail.com provided disassembled source code.  Some of his functions contained errors which cause the program to fail.  We obtained executabled code from http://vx.netlux.org/vl.php?dir=Virus.Win32.Evol, and disassembled it using IDA Pro.  We found the mistakes in the disassembled source code and corrected them.
 
 ## 6. APPENDIX A: MASM32 and wine
 It is possible to use MASM32 in Linux using wine.  When you download MAMS32, 
