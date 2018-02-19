@@ -99,7 +99,7 @@ semantics.  This demonstrates that some obfuscation engines have bugs.
 * Author: [Martin Velez](https://martinvelez.github.io), Earl Barr, and Zhendong Su.
 * License: MIT
 
-Please read the [Code of Conduct][CODE_OF_CONDUCT.md]. You can obtain the source from Github.
+Please read the [Code of Conduct](CODE_OF_CONDUCT.md). You can obtain the source from Github.
 
 ```bash
 git clone https://github.com/martinvelez/w32evol
