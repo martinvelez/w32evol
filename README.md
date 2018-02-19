@@ -94,11 +94,12 @@ semantics.  This demonstrates that some obfuscation engines have bugs.
 
 
 ## 5. Development
+
 * Original Author: Unknown.
 * Author: [Martin Velez](https://martinvelez.github.io), Earl Barr, and Zhendong Su.
 * License: MIT
 
-You can obtain the source from Github.
+Please read the [Code of Conduct][CODE_OF_CONDUCT.md]. You can obtain the source from Github.
 
 ```bash
 git clone https://github.com/martinvelez/w32evol
@@ -110,12 +111,12 @@ You report bugs and request features using the Github issue tracker.
 https://github.com/martinvelez/w32evol/issues
 ```
 
-### Acknowledgements
+## 6. Acknowledgements
 * [Orr](http://www.antilife.org/files/Evol.pdf) wrote an [article](www.openrce.org/articles/full\_view/27) in which described how he disassembled the metamorphic engine used in the W32.Evol virus.  He was kind enough to email his disassembled code.  
 * [VX Heavens](http://vx.netlux.org/vl.php?dir=Virus.Win32.Evol)
 * orriscariot@gmail.com provided disassembled source code.  Some of his functions contained errors which cause the program to fail.  We obtained executabled code from http://vx.netlux.org/vl.php?dir=Virus.Win32.Evol, and disassembled it using IDA Pro.  We found the mistakes in the disassembled source code and corrected them.
 
-## 6. APPENDIX A: MASM32 and wine
+## APPENDIX A: MASM32 and wine
 It is possible to use MASM32 in Linux using wine.  When you download MAMS32, 
 you get an installer file, install.exe.  Use wine to run that installer.  
 
